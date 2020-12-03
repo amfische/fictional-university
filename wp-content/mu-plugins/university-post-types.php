@@ -16,11 +16,7 @@ function university_post_types() {
 			),
 			'has_archive'     => true,
 			'rewrite'         => array( 'slug' => 'events' ),
-			'supports'        => array(
-				'title',
-				'editor',
-				'excerpt',
-			),
+			'supports'        => array( 'title', 'editor', 'excerpt' ),
 			'show_in_rest'    => true,
 			'capability_type' => 'event',
 			'map_meta_cap'    => true,
@@ -60,11 +56,7 @@ function university_post_types() {
 				'all_items'     => 'All Professors',
 				'singular_name' => 'Professor',
 			),
-			'supports'     => array(
-				'title',
-				'editor',
-				'thumbnail',
-			),
+			'supports'     => array( 'title', 'editor', 'thumbnail' ),
 			'show_in_rest' => true,
 		)
 	);
@@ -84,11 +76,7 @@ function university_post_types() {
 			),
 			'has_archive'     => true,
 			'rewrite'         => array( 'slug' => 'campuses' ),
-			'supports'        => array(
-				'title',
-				'editor',
-				'excerpt',
-			),
+			'supports'        => array( 'title', 'editor', 'excerpt' ),
 			'show_in_rest'    => true,
 			'capability_type' => 'campus',
 			'map_meta_cap'    => true,
@@ -109,10 +97,7 @@ function university_post_types() {
 				'all_items'     => 'All Notes',
 				'singular_name' => 'Note',
 			),
-			'supports'        => array(
-				'title',
-				'editor',
-			),
+			'supports'        => array( 'title', 'editor' ),
 			'show_in_rest'    => true,
 			'capability_type' => 'note',
 			'map_meta_cap'    => true,
