@@ -237,3 +237,10 @@ add_filter(
 		return $data;
 	}
 );
+
+add_filter( 'ai1wm_exclude_content_from_export', 'ai1wm_ignored_files', 10 );
+
+function ai1wm_ignored_files( $exclude_filters ) {
+	$exclude_filters[] = 'themes/fictional-university-theme/node_modules';
+	return $exclude_filters;
+}
