@@ -220,7 +220,7 @@ add_filter(
 
 		// limit number of Notes each user can create
 		if ( $data['post_type'] === 'note' && count_user_posts( get_current_user_id(), 'note' ) > 4 && $_SERVER['REQUEST_METHOD'] === 'POST' ) {
-			$error = array( 'msg' => sanitize_text_field( 'You have reached your note limit.' ) );
+			$error = array( 'msg' => 'You have reached your note limit.' );
 			wp_send_json_error( $error, 400 );
 		}
 
