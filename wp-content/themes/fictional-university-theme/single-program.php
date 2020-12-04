@@ -1,4 +1,4 @@
-<?php /** @noinspection PhpUnhandledExceptionInspection */
+<?php
 get_header();
 while( have_posts() ) :
 	the_post();
@@ -66,7 +66,7 @@ while( have_posts() ) :
 			  [
 				  'key'     => 'related_programs',
 				  'compare' => 'LIKE',
-				  'value'   => '"' . get_the_ID() . '"'
+				  'value'   => get_the_ID()
 			  ]
 		  ]
 	  ] );
@@ -98,7 +98,7 @@ while( have_posts() ) :
 			  [
 				  'key'     => 'related_programs',
 				  'compare' => 'LIKE',
-				  'value'   => '"' . get_the_ID() . '"'
+				  'value'   => get_the_ID()
 			  ]
 		  ]
 	  ] );
