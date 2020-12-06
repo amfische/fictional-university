@@ -1,6 +1,5 @@
 node_modules/
 .idea/
 wp-content/debug.log
-wp-content/uploads/
 wp-content/ai1wm-backups
 wp-config.php
