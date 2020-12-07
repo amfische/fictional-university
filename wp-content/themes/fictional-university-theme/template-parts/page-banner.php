@@ -15,11 +15,11 @@ if ( ! isset( $args['image_url'] ) ) {
 ?>
 
 <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url(<?php echo $args['image_url']; ?>);"></div>
-  <div class="page-banner__content container container--narrow">
-    <h1 class="page-banner__title"><?php echo $args['title']; ?></h1>
-    <div class="page-banner__intro">
-      <p><?php echo $args['subtitle']; ?></p>
-    </div>
-  </div>
+	<div class="page-banner__bg-image" style="background-image: url(<?php echo esc_url_raw( $args['image_url'] ); ?>);"></div>
+	<div class="page-banner__content container container--narrow">
+		<h1 class="page-banner__title"><?php echo esc_html( $args['title'] ); ?></h1>
+		<div class="page-banner__intro">
+			<p><?php echo esc_html( $args['subtitle'] ); ?></p>
+		</div>
+	</div>
 </div>
