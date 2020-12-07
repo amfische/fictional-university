@@ -6,7 +6,7 @@ get_template_part(
 	null,
 	array(
 		'title'    => 'Search Results',
-		'subtitle' => 'You searched for &ldquo;' . get_search_query() . '&rdquo;',
+		'subtitle' => 'You searched for &ldquo;' . esc_html( get_search_query() ) . '&rdquo;',
 	)
 );
 
